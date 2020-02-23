@@ -1,0 +1,10 @@
+button{
+  width: 800px;
+  padding: 10px;
+}
+
+nav{
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+}

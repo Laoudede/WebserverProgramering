@@ -1,0 +1,33 @@
+.vent{
+
+  color:#ffffff;
+  margin-right:20px;
+}
+
+body {
+
+  margin:auto;
+
+}
+
+.logo{
+  background-image: url("/webbserver1920S/mvctemplate/bilder/logo.png");
+  background-repeat:no-repeat;
+  height:150px;
+
+
+
+}
+.login{
+
+  font-size:22px;
+  color:blue;
+
+
+
+}
+
+#rubrik{
+
+  /* någonting med att göra den till en H1 */
+}
