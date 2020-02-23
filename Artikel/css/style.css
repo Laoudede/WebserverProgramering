@@ -1,0 +1,18 @@
+#artikel{
+  width: 300px;
+
+
+}
+
+#wrapper{
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#artikel img{
+
+width:200px;
+height:200px;
+
+}
