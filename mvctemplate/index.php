@@ -41,8 +41,7 @@ if ($URI_parts[3] == 'start'){
   bottom();
 
 
-}else if ($URI_parts[3] == 'kontakta'){ //Gör en kontakta sida med en knapp till den där link ligger just nu. Skapa en länk till en fil som heter typ blogg. Kräv inloggningssystem för nån sida. Lägg till en bild på logotype.
-
+}else if ($URI_parts[3] == 'kontakta'){
   top();
   menu();
   article_kontakta();

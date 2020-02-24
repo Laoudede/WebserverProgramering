@@ -10,20 +10,11 @@ body {
 
 }
 
-.logo{
-  background-image: url("/webbserver1920S/mvctemplate/bilder/logo.png");
-  background-repeat:no-repeat;
-  height:150px;
 
-
-
-}
 .login{
 
   font-size:22px;
   color:blue;
-
-
 
 }
 #bild img{

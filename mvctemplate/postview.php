@@ -2,8 +2,6 @@
 
 function postview(){
 
-
-}
  ?>
 
  <div class="row">
@@ -20,12 +18,15 @@ function postview(){
         echo "<li id='bild'>". "<img src=".'./bilder/'.$post['bild'].">"."</img>"."</li>";
         echo "<li id='text'>".$post['text']."</li>";
 
-        /*  foreach ($comment->get() as $comment) {  typ funktion "got children"
-            echo "<li id='text'>".$comment['text']."</li>";
-          }*/
-
         echo "<br>";
       }
+     foreach ($commentmodel->get() as $comment) {
+          echo "<li id='text'>".$comment['text']."</li>";
+          echo "<br>";
+        }
       ?></ul>
 
     </div>
+<?php
+}
+ ?>
