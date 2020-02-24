@@ -16,9 +16,9 @@ function postview(){
       $postmodel = new postmodel();
       $commentmodel = new commentmodel();
       foreach($postmodel->get() as $post){
-        echo "<li id='rubrik'>".$post['rubrik']."</li>"; /* har gett dom id för att kunna fixa css */
+        echo "<li id='rubrik'>"."<h1>".$post['rubrik']."</h1>"."</li>"; /* har gett dom id för att kunna fixa css */
         echo "<li id='text'>".$post['text']."</li>";
-        echo "<li id='bild'>".$post['bild']."</li>";
+        echo "<li id='bild'>". "<img src=".'./bilder/'.$post['bild'].">"."</img>"."</li>";
 
         /*  foreach ($comment->get() as $comment) {  typ funktion "got children"
             echo "<li id='text'>".$comment['text']."</li>";

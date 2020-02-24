@@ -26,8 +26,18 @@ body {
 
 
 }
+#bild img{
+max-height: 150px;
+max-width: 200px;
+
+}
+
+li{
+list-style-type:none;
+
+}
 
 #rubrik{
 
-  /* någonting med att göra den till en H1 */
+
 }
