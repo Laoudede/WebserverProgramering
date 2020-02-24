@@ -14,7 +14,7 @@ function top(){
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mybootstrap.css" rel="stylesheet">
     <link href="css/my.css" rel="stylesheet">
-    
+
   </head>
   <body>
     <div class="container">
@@ -22,7 +22,7 @@ function top(){
       <br>
 
       <div class="row">
-        <div  class="col-xs-12 col-md-8" >  <div class="logo"> <img src="https://picsum.photos/350/250" alt=""> </div></div>
+        <div  class="col-xs-12 col-md-8" >  <div class="logo"> <img src="/bilder/blogBild.jpeg" alt="loggotyp"> </div></div>
         <div class="col-xs-6 col-md-4 login">
           <!-- Troligtvis så är det här som inloggningssystemet ska implementeras
 

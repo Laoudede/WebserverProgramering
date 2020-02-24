@@ -21,7 +21,7 @@ function postview(){
         echo "<br>";
       }
      foreach ($commentmodel->get() as $comment) {
-          echo "<li id='text'>".$comment['text']."</li>";
+          echo "<li id='kommentar_text'>".$comment['text']."</li>";
           echo "<br>";
         }
       ?></ul>
