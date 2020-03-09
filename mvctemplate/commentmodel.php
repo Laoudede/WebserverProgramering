@@ -1,8 +1,15 @@
 <?php
 class commentmodel extends DB {
 
-  function get(){
-    return $this->select("SELECT * FROM comments WHERE post_fk = comment_pk"); /* denna SQL-frågan är fucked. nuvarande kommer bara läsa in kommentaren i det magiska fall att det finns en post_fk som har samma nummer som comment_pk*/
+  function get($comment_pk){
+    return $this->select("SELECT * FROM comments WHERE comment_pk = :commentpk",  array(":commentpk" => $comment_pk)  );
+
   }
+
+function hasChild($comment_pk) {
+  return $this->select("SELECT * FROM comments WHERE comment_fk = :commentpk",  array(":commentpk" => $comment_pk)  );
+
+}
+
 }
 ?>

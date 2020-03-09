@@ -12,7 +12,8 @@ require "bottomview.php";
 require "article_startview.php";
 require "article_omview.php";
 require "article_kontaktaview.php";
-require_once "dbconnect.php";
+require "dbconnect.php";
+require "commentInserter.php";
 require 'commentmodel.php';
 require 'postmodel.php';
 require 'postview.php';
@@ -50,6 +51,14 @@ if ($URI_parts[3] == 'start'){
   bottom();
 
 }
+else if ($URI_parts[3] == 'commentInsertView'){
+  top();
+  menu();
+  commentInsertView();
+  bottom();
+
+}
+
 else{
   header("HTTP/1.0 404 Not Found");
   echo"sökta sidan finns inte";
