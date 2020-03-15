@@ -13,6 +13,7 @@ require "article_startview.php";
 require "article_omview.php";
 require "article_kontaktaview.php";
 require "dbconnect.php";
+require 'commentInsertView.php';
 require "commentInserter.php";
 require 'commentmodel.php';
 require 'postmodel.php';
@@ -31,7 +32,7 @@ if ($URI_parts[3] == 'start'){
   top();
   menu();
   //article_start(null);
-  postview();
+  postview(false);
   bottom();
 
 }else if ($URI_parts[3] == 'om'){
@@ -46,8 +47,6 @@ if ($URI_parts[3] == 'start'){
   top();
   menu();
   article_kontakta();
-  /*$users=getusersmodel();
-  usersview($users); */
   bottom();
 
 }
@@ -55,6 +54,8 @@ else if ($URI_parts[3] == 'commentInsertView'){
   top();
   menu();
   commentInsertView();
+  article_start(null);
+  postview(true);
   bottom();
 
 }
