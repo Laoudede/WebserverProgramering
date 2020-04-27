@@ -29,7 +29,7 @@ function postview($validate){
              echo "<br>";
              echo'<form action="commentInserter" method="get">';
                     echo' Kommentera: <input type="text" name="kommentar" id="kommentar">';
-                    echo'<input type="hidden" name="pk" value="'.$comment['comment_pk'].'"  ';
+                    echo'<input type="hidden" name="pk" value="'.$comment['comment_pk'].'" > ';
                    echo'<input type="submit">';
                echo'</form>';
 
@@ -43,7 +43,7 @@ function postview($validate){
 
                   echo'<form action="commentInserter" method="get">';
                          echo' Kommentera: <input type="text" name="kommentar" id="kommentar">';
-                         echo'<input type="hidden" name="pk" value="'.$childComment['comment_pk'].'"  ';
+                         echo'<input type="hidden" name="pk" value="'.$childComment['comment_pk'].'" > ';
                          echo'<input type="submit">';
                     echo'</form>';
 
